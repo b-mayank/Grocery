@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/akaya_telivigala</item>
+        <item>@font/alex_brush</item>
+        <item>@font/allerta</item>
+        <item>@font/architects_daughter</item>
+        <item>@font/beth_ellen</item>
+        <item>@font/caveat_brush</item>
+    </array>
+</resources>

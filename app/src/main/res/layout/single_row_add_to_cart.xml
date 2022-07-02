@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F1683C"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        android:elevation="12dp"
+        android:background="#FBEB55"
+        android:layout_margin="5dp"
+        android:outlineSpotShadowColor="@color/purple_500"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_view_cart"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:padding="3dp"
+                android:src="@drawable/grocery_icon" />
+
+            <TextView
+                android:id="@+id/text_view_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@+id/image_view_cart"
+                android:gravity="center"
+                android:text="Product Title"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_view_mrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_title"
+                android:layout_toRightOf="@+id/image_view_cart"
+                android:gravity="center"
+                android:text="MRP"
+                android:layout_marginStart="8dp"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/text_view_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_mrp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/image_view_cart"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Price"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_view"
+                android:layout_toRightOf="@+id/text_view_price"
+                app:cardCornerRadius="3dp"
+                android:padding="4dp"
+                android:background="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/text_view_mrp"
+                android:elevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="4"
+                    android:layout_margin="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/text_view_add"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:layout_margin="3dp"
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/text_view_quantity"
+                        android:layout_weight="1"
+                        android:text="1"
+                        android:textSize="24dp"
+                        android:layout_margin="3dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/text_view_sub"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:textSize="24dp"
+                        android:layout_margin="3dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <ImageView
+                        android:id="@+id/button_delete"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_delete" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
